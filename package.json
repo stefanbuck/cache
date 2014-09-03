@@ -1,6 +1,6 @@
 {
   "name": "github-linker-registries",
-  "description": "The best module ever.",
+  "description": "List of npm and bower modules",
   "version": "1.0.0",
   "homepage": "https://github.com/stefanbuck/github-linker-registries",
   "bugs": "https://github.com/stefanbuck/github-linker-registries/issues",
@@ -18,23 +18,20 @@
   "keywords": [],
   "dependencies": {},
   "devDependencies": {
+    "lodash": "2.4.1",
+    "request": "^2.40.0",
     "JSONStream": "^0.9.0",
     "coveralls": "^2.10.0",
     "event-stream": "^3.1.7",
     "github-url-from-git": "^1.4.0",
     "gulp": "^3.6.2",
     "gulp-bump": "^0.1.8",
-    "gulp-istanbul": "^0.2.0",
     "gulp-jscs": "^0.4.2",
     "gulp-jshint": "^1.5.5",
     "gulp-load-plugins": "^0.5.1",
-    "gulp-mocha": "^0.4.1",
     "gulp-plumber": "^0.6.2",
     "gulp-util": "2.2.16",
-    "jshint-stylish": "^0.2.0",
-    "lodash": "2.4.1",
-    "request": "^2.40.0",
-    "should": "^3.3.1"
+    "jshint-stylish": "^0.2.0"
   },
   "scripts": {
     "coveralls": "gulp test && cat coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
