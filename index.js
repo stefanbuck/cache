@@ -9,6 +9,6 @@
 'use strict';
 
 module.exports = {
-  bower: require('store/bower.js'),
-  npm: require('store/npm.js')
+  bower: require('./store/bower.js'),
+  npm: require('./store/npm.js')
 };

@@ -10,9 +10,9 @@ $ npm install --save github-linker-registries
 
 ## Total supported repositories
 
-npm: 1
+npm: 75151
 
-bower: 1
+bower: 16982
 
 
 ## License
@@ -30,6 +30,6 @@ Copyright (c) 2014 Stefan Buck. Licensed under the MIT license.
 [coveralls-url]: https://coveralls.io/r/stefanbuck/github-linker-registries
 [coveralls-image]: https://coveralls.io/repos/stefanbuck/github-linker-registries/badge.png
 [npm-url]: https://npmjs.org/
-[npm-image]: http://img.shields.io/badge/npm-1-green.svg
+[npm-image]: http://img.shields.io/badge/npm-75151-green.svg
 [bower-url]: https://bower.io/
-[bower-image]: http://img.shields.io/badge/bower-1-green.svg
+[bower-image]: http://img.shields.io/badge/bower-16982-green.svg
