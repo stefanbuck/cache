@@ -8,6 +8,19 @@
 $ npm install --save github-linker-registries
 ```
 
+
+## Usage
+
+```javascript
+var registries = require('github-linker-registries');
+console.log(registries.npm) 
+// => {"jquery":"https://github.com/jquery/jquery", "bootstrap":"https://github.com/twbs/bootstrap" ...}
+
+console.log(registries.bower)
+// => {"lodash":"https://github.com/lodash/lodash", "async":"https://github.com/caolan/async" ...}
+```
+
+
 ## Total supported repositories
 
 npm: 75151
