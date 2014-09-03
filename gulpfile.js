@@ -4,7 +4,7 @@ var gulp   = require('gulp');
 var plugins = require('gulp-load-plugins')();
 var stats = {total: {}, update: {}};
 var paths = {
-  lint: ['./gulpfile.js', './task/**/*.js', './store/*.js']
+  lint: ['./gulpfile.js', './task/**/*.js', './store/*.js', './index.js']
 };
 
 gulp.task('lint', function () {
@@ -49,7 +49,7 @@ gulp.task('bump', function () {
 
 gulp.task('build', ['buildNPM', 'buildBower']);
 
-gulp.task('default', ['build', 'bump'], function() {
+gulp.task('default', ['build', 'lint', 'bump'], function() {
   var history = require('./task/history.js');
   history(stats);
 });
