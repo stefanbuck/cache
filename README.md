@@ -34,8 +34,8 @@ Copyright (c) 2014 Stefan Buck. Licensed under the MIT license.
 
 
 
-[npmjs-url]: https://npmjs.org/package/github-linker-registries
-[npmjs-image]: https://badge.fury.io/js/github-linker-registries.svg
+[npm-url]: https://npmjs.org/package/github-linker-registries
+[npm-image]: https://badge.fury.io/js/github-linker-registries.svg
 [count-npm-url]: https://npmjs.org/
 [count-npm-image]: http://img.shields.io/badge/npm-75151-green.svg
 [count-bower-url]: https://bower.io/
