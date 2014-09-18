@@ -49,7 +49,7 @@ module.exports = function(options, done) {
   };
 
   reqeust.get(options.uri)
-  .pipe(JSONStream.parse(options.jsonStreamPath))
+  .pipe(JSONStream.parse(options.jsonStreamPath, options.jsonStreamMap))
   .pipe(filter)
   .on('data', handleData)
   .pipe(repoParser)
