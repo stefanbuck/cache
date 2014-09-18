@@ -10,8 +10,10 @@ var updateReadme = function(stats) {
 
   content = content.replace(/(npm: )[0-9]*/g, '$1' + stats.npm)
       .replace(/(bower: )[0-9]*/g, '$1' + stats.bower)
+      .replace(/(composer: )[0-9]*/g, '$1' + stats.composer)
       .replace(/(badge\/npm-)[0-9]*/g, '$1' + stats.npm)
-      .replace(/(badge\/bower-)[0-9]*/g, '$1' + stats.bower);
+      .replace(/(badge\/bower-)[0-9]*/g, '$1' + stats.bower)
+      .replace(/(badge\/composer-)[0-9]*/g, '$1' + stats.composer);
 
   fs.writeFileSync(filePath, content, 'utf-8');
 };
@@ -33,6 +35,9 @@ var updateChangelog = function(stats) {
   }
   if (stats.bower) {
     entry += '\nbower: ' + stats.bower;
+  }
+  if (stats.composer) {
+    entry += '\ncomposer: ' + stats.composer;
   }
 
   var title = '# Changelog';

@@ -39,6 +39,18 @@ gulp.task('buildBower', function (cb) {
   });
 });
 
+gulp.task('buildComposer', function (cb) {
+  var composerTask = require('./task/composer.js');
+  composerTask(function(err, result) {
+    if (err) {
+      return cb(err);
+    }
+    stats.update.composer = result.update;
+    stats.total.composer = result.total;
+    cb();
+  });
+});
+
 gulp.task('bump', function () {
   var bumpType = plugins.util.env.type || 'patch'; // major.minor.patch
 
@@ -47,7 +59,7 @@ gulp.task('bump', function () {
     .pipe(gulp.dest('./'));
 });
 
-gulp.task('build', ['buildNPM', 'buildBower']);
+gulp.task('build', ['buildNPM', 'buildBower', 'buildComposer']);
 
 gulp.task('default', ['build', 'lint', 'bump'], function() {
   var history = require('./task/history.js');
