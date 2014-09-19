@@ -1,7 +1,7 @@
 {
   "name": "github-linker-registries",
   "description": "List of npm and bower modules",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "homepage": "https://github.com/stefanbuck/github-linker-registries",
   "bugs": "https://github.com/stefanbuck/github-linker-registries/issues",
   "license": "MIT",
