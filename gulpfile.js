@@ -2,9 +2,12 @@
 
 var gulp   = require('gulp');
 var plugins = require('gulp-load-plugins')();
+
 var stats = {total: {}, update: {}};
 var paths = {
-  lint: ['./gulpfile.js', './task/**/*.js', './store/*.js', './index.js']
+  lint: ['./gulpfile.js', './task/**/*.js', './store/*.js', './index.js', './test/**/*.js'],
+  tests: ['./test/**/*.js', '!test/{temp,temp/**}', '!test/fixtures/**'],
+  source: ['./index.js']
 };
 
 gulp.task('lint', function () {
@@ -13,6 +16,21 @@ gulp.task('lint', function () {
     .pipe(plugins.plumber())
     .pipe(plugins.jscs())
     .pipe(plugins.jshint.reporter('jshint-stylish'));
+});
+
+gulp.task('istanbul', function (cb) {
+  gulp.src(paths.source)
+    .pipe(plugins.istanbul()) // Covering files
+    .on('finish', function () {
+      gulp.src(paths.tests)
+        .pipe(plugins.plumber())
+        .pipe(plugins.mocha())
+        .pipe(plugins.istanbul.writeReports()) // Creating the reports after tests runned
+        .on('finish', function() {
+          process.chdir(__dirname);
+          cb();
+        });
+    });
 });
 
 gulp.task('buildNPM', function (cb) {
@@ -59,7 +77,9 @@ gulp.task('bump', function () {
     .pipe(gulp.dest('./'));
 });
 
-gulp.task('build', ['buildNPM', 'buildBower', 'buildComposer']);
+gulp.task('build', ['test', 'buildNPM', 'buildBower', 'buildComposer']);
+
+gulp.task('test', ['lint', 'istanbul']);
 
 gulp.task('default', ['build', 'lint', 'bump'], function() {
   var history = require('./task/history.js');

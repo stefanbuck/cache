@@ -1,5 +1,5 @@
 # github-linker-registries 
-[![Supported npm package][count-npm-image]][count-npm-url] [![Supported bower package][count-bower-image]][count-bower-url] [![Supported composer package][count-composer-image]][count-composer-url] [![NPM version][npm-image]][npm-url]
+[![Build Status][travis-image]][travis-url] [![NPM version][npm-image]][npm-url] [![Supported npm package][count-npm-image]][count-npm-url] [![Supported bower package][count-bower-image]][count-bower-url] [![Supported composer package][count-composer-image]][count-composer-url]
 
 
 ## Install
@@ -41,6 +41,8 @@ Copyright (c) 2014 Stefan Buck. Licensed under the MIT license.
 
 [npm-url]: https://npmjs.org/package/github-linker-registries
 [npm-image]: https://badge.fury.io/js/github-linker-registries.svg
+[travis-url]: https://travis-ci.org/stefanbuck/github-linker-registries
+[travis-image]: https://travis-ci.org/stefanbuck/github-linker-registries.svg?branch=master
 [count-npm-url]: https://npmjs.org/
 [count-npm-image]: http://img.shields.io/badge/npm-78723-green.svg
 [count-bower-url]: https://bower.io/
