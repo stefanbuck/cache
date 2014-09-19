@@ -1,5 +1,5 @@
 # github-linker-registries 
-[![Supported npm package][count-npm-image]][count-npm-url] [![Supported bower package][count-bower-image]][count-bower-url] ![Supported composer package][count-composer-image]][count-composer-url] [![NPM version][npm-image]][npm-url]
+[![Supported npm package][count-npm-image]][count-npm-url] [![Supported bower package][count-bower-image]][count-bower-url] [![Supported composer package][count-composer-image]][count-composer-url] [![NPM version][npm-image]][npm-url]
 
 
 ## Install
@@ -18,6 +18,9 @@ console.log(registries.npm)
 
 console.log(registries.bower)
 // => {"lodash":"https://github.com/lodash/lodash", "async":"https://github.com/caolan/async" ...}
+
+console.log(registries.composer)
+// => {"monolog/monolog":"https://github.com/Seldaek/monolog", "twig/twig":"https://github.com/fabpot/Twig" ...}
 ```
 
 
