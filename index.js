@@ -10,5 +10,6 @@
 
 module.exports = {
   bower: require('./store/bower.js'),
-  npm: require('./store/npm.js')
+  npm: require('./store/npm.js'),
+  composer: require('./store/composer.js')
 };
