@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.0.2 2014-09-19
+npm: 60
+bower: 6244
+composer: 24
+
 ## 1.0.1 2014-09-19
 npm: 3753
 bower: 491
