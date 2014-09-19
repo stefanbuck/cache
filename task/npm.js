@@ -73,7 +73,7 @@ var getURL = function(node) {
 module.exports = function(done) {
 
   var options = {
-    uri: 'http://isaacs.iriscouch.com/registry/_all_docs?include_docs=true',
+    uri: 'https://skimdb.npmjs.com/registry/_all_docs?include_docs=true',
     jsonStreamPath: 'rows.*.doc',
     filter: ['name', 'repository', 'repositories', 'homepage'],
     filePath: path.resolve(__dirname, '../store/npm.js'),
