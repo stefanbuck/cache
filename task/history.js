@@ -29,7 +29,7 @@ var updateChangelog = function(stats) {
   var version = pkg.version;
   var date = new Date().toISOString().slice(0,10);
 
-  var entry = util.format('\n## %s %s', version, date);
+  var entry = util.format('\n## v%s (%s)', version, date);
   if (stats.npm) {
     entry += '\nnpm: ' + stats.npm;
   }

@@ -1,6 +1,6 @@
 /*
- * github-linker-registries
- * https://github.com/stefanbuck/github-linker-registries
+ * github-linker-cache
+ * https://github.com/stefanbuck/github-linker-cache
  *
  * Copyright (c) 2014 Stefan Buck
  * Licensed under the MIT license.

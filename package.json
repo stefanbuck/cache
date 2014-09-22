@@ -1,11 +1,11 @@
 {
-  "name": "github-linker-registries",
+  "name": "github-linker-cache",
   "description": "List of npm and bower modules",
-  "version": "1.0.2",
-  "homepage": "https://github.com/stefanbuck/github-linker-registries",
-  "bugs": "https://github.com/stefanbuck/github-linker-registries/issues",
+  "version": "0.1.0",
+  "homepage": "https://github.com/stefanbuck/github-linker-cache",
+  "bugs": "https://github.com/stefanbuck/github-linker-cache/issues",
   "license": "MIT",
-  "main": "lib/github-linker-registries.js",
+  "main": "lib/github-linker-cache.js",
   "author": {
     "name": "Stefan Buck",
     "email": "code@stefanbuck.com",
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/stefanbuck/github-linker-registries"
+    "url": "https://github.com/stefanbuck/github-linker-cache"
   },
   "keywords": [],
   "dependencies": {},
