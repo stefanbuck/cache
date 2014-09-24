@@ -5,7 +5,7 @@
   "homepage": "https://github.com/stefanbuck/github-linker-cache",
   "bugs": "https://github.com/stefanbuck/github-linker-cache/issues",
   "license": "MIT",
-  "main": "lib/github-linker-cache.js",
+  "main": "index.js",
   "author": {
     "name": "Stefan Buck",
     "email": "code@stefanbuck.com",
