@@ -29,15 +29,15 @@ var updateChangelog = function(stats) {
   var version = pkg.version;
   var date = new Date().toISOString().slice(0,10);
 
-  var entry = util.format('\n## v%s (%s)', version, date);
+  var entry = util.format('\n\n## v%s (%s)', version, date);
   if (stats.npm) {
-    entry += '\nnpm: ' + stats.npm;
+    entry += '\n\nnpm: ' + stats.npm;
   }
   if (stats.bower) {
-    entry += '\nbower: ' + stats.bower;
+    entry += '\n\nbower: ' + stats.bower;
   }
   if (stats.composer) {
-    entry += '\ncomposer: ' + stats.composer;
+    entry += '\n\ncomposer: ' + stats.composer;
   }
 
   var title = '# Changelog';
