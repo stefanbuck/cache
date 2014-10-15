@@ -1,0 +1,12 @@
+{
+ "total": {
+  "npm": 82794,
+  "bower": 18714,
+  "composer": 39057
+ },
+ "update": {
+  "npm": 0,
+  "bower": 0,
+  "composer": 0
+ }
+}

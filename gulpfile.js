@@ -1,13 +1,28 @@
 'use strict';
 
-var gulp   = require('gulp');
+var fs = require('fs');
+var gulp = require('gulp');
 var plugins = require('gulp-load-plugins')();
+var stats = require('./stats.json');
 
-var stats = {total: {}, update: {}};
 var paths = {
   lint: ['./gulpfile.js', './task/**/*.js', './store/*.js', './index.js', './test/**/*.js'],
   tests: ['./test/**/*.js', '!test/{temp,temp/**}', '!test/fixtures/**'],
   source: ['./index.js']
+};
+
+var writeStats = function(type, result) {
+  if (stats.total[type] > result.total) {
+    // TODO revert store file
+    console.log(type + ' update failed');
+    process.exit(1);
+    return;
+  }
+
+  stats.update[type] = result.update;
+  stats.total[type] = result.total;
+
+  fs.writeFileSync('./stats.json', JSON.stringify(stats,null, ' '));
 };
 
 gulp.task('lint', function () {
@@ -39,8 +54,7 @@ gulp.task('buildNPM', function (cb) {
     if (err) {
       return cb(err);
     }
-    stats.update.npm = result.update;
-    stats.total.npm = result.total;
+    writeStats('npm', result);
     cb();
   });
 });
@@ -51,8 +65,7 @@ gulp.task('buildBower', function (cb) {
     if (err) {
       return cb(err);
     }
-    stats.update.bower = result.update;
-    stats.total.bower = result.total;
+    writeStats('bower', result);
     cb();
   });
 });
@@ -63,8 +76,7 @@ gulp.task('buildComposer', function (cb) {
     if (err) {
       return cb(err);
     }
-    stats.update.composer = result.update;
-    stats.total.composer = result.total;
+    writeStats('composer', result);
     cb();
   });
 });
