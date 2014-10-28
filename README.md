@@ -26,11 +26,11 @@ console.log(registries.composer)
 
 ## Total supported repositories
 
-npm: 83933
+npm: 85232
 
-bower: 19041
+bower: 19414
 
-composer: 39611
+composer: 40213
 
 
 ## License
@@ -44,8 +44,8 @@ Copyright (c) 2014 Stefan Buck. Licensed under the MIT license.
 [travis-url]: https://travis-ci.org/stefanbuck/github-linker-cache
 [travis-image]: https://travis-ci.org/stefanbuck/github-linker-cache.svg?branch=master
 [count-npm-url]: https://npmjs.org/
-[count-npm-image]: http://img.shields.io/badge/npm-83933-green.svg
+[count-npm-image]: http://img.shields.io/badge/npm-85232-green.svg
 [count-bower-url]: https://bower.io/
-[count-bower-image]: http://img.shields.io/badge/bower-19041-green.svg
+[count-bower-image]: http://img.shields.io/badge/bower-19414-green.svg
 [count-composer-url]: https://packagist.org/
-[count-composer-image]: http://img.shields.io/badge/composer-39611-green.svg
+[count-composer-image]: http://img.shields.io/badge/composer-40213-green.svg
