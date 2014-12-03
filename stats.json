@@ -1,12 +1,12 @@
 {
  "total": {
-  "npm": 90729,
-  "bower": 20807,
-  "composer": 42648
+  "npm": 91613,
+  "bower": 21085,
+  "composer": 43037
  },
  "update": {
-  "npm": 1876,
-  "bower": 496,
-  "composer": 878
+  "npm": 918,
+  "bower": 307,
+  "composer": 443
  }
 }
