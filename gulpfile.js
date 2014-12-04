@@ -81,11 +81,11 @@ gulp.task('buildComposer', function (cb) {
   });
 });
 
-gulp.task('build', ['test', 'buildNPM', 'buildBower', 'buildComposer']);
+gulp.task('build', ['buildNPM', 'buildBower', 'buildComposer']);
 
 gulp.task('test', ['lint', 'istanbul']);
 
-gulp.task('default', ['build', 'lint'], function() {
+gulp.task('default', ['build'], function() {
   var history = require('./task/history.js');
   history(stats);
 });

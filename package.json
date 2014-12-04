@@ -38,6 +38,7 @@
   },
   "scripts": {
     "coveralls": "gulp test && cat coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
+    "build": "gulp && gulp lint",
     "test": "gulp test"
   },
   "files": [
