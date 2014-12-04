@@ -81,19 +81,11 @@ gulp.task('buildComposer', function (cb) {
   });
 });
 
-gulp.task('bump', function () {
-  var bumpType = plugins.util.env.type || 'patch'; // major.minor.patch
-
-  return gulp.src(['./package.json'])
-    .pipe(plugins.bump({ type: bumpType }))
-    .pipe(gulp.dest('./'));
-});
-
 gulp.task('build', ['test', 'buildNPM', 'buildBower', 'buildComposer']);
 
 gulp.task('test', ['lint', 'istanbul']);
 
-gulp.task('default', ['build', 'lint', 'bump'], function() {
+gulp.task('default', ['build', 'lint'], function() {
   var history = require('./task/history.js');
   history(stats);
 });
