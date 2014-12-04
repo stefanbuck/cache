@@ -42,6 +42,7 @@
     "test": "gulp test"
   },
   "files": [
-    "store"
+    "store",
+    "index.js"
   ]
 }
