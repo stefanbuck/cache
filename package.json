@@ -1,19 +1,19 @@
 {
   "name": "github-linker-cache",
-  "description": "List of npm and bower modules",
+  "description": "Module that contains the mapping between a dependency and their related GitHub repository page",
   "version": "0.2.17",
-  "homepage": "https://github.com/stefanbuck/github-linker-cache",
-  "bugs": "https://github.com/stefanbuck/github-linker-cache/issues",
+  "homepage": "https://github.com/github-linker/cache",
+  "bugs": "https://github.com/github-linker/cache/issues",
   "license": "MIT",
   "main": "index.js",
   "author": {
     "name": "Stefan Buck",
-    "email": "code@stefanbuck.com",
+    "email": "github@stefanbuck.com",
     "url": "http://stefanbuck.com"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/stefanbuck/github-linker-cache"
+    "url": "https://github.com/github-linker/cache"
   },
   "keywords": [],
   "dependencies": {},
@@ -40,9 +40,5 @@
     "coveralls": "gulp test && cat coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
     "build": "gulp && gulp lint",
     "test": "gulp test"
-  },
-  "files": [
-    "store",
-    "index.js"
-  ]
+  }
 }

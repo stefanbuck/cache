@@ -1,6 +1,7 @@
-# github-linker-cache 
+# cache 
 [![Build Status][travis-image]][travis-url] [![NPM version][npm-image]][npm-url] [![Supported npm package][count-npm-image]][count-npm-url] [![Supported bower package][count-bower-image]][count-bower-url] [![Supported composer package][count-composer-image]][count-composer-url]
 
+Module that contains the mapping between a dependency and their related GitHub repository page.
 
 ## Install
 
@@ -9,18 +10,19 @@ $ npm install --save github-linker-cache
 ```
 
 
-## Usage
+## API
 
 ```javascript
 var cache = require('github-linker-cache');
-console.log(cache.npm) 
-// => {"jquery":"https://github.com/jquery/jquery", "bootstrap":"https://github.com/twbs/bootstrap" ...}
 
-console.log(cache.bower)
-// => {"lodash":"https://github.com/lodash/lodash", "async":"https://github.com/caolan/async" ...}
+console.log(cache.npm['jquery']);
+// https://github.com/jquery/jquery
 
-console.log(registries.composer)
-// => {"monolog/monolog":"https://github.com/Seldaek/monolog", "twig/twig":"https://github.com/fabpot/Twig" ...}
+console.log(cache.bower['lodash']);
+// https://github.com/lodash/lodash
+
+console.log(cache.composer['monolog']);
+// https://github.com/Seldaek/monolog
 ```
 
 
@@ -35,14 +37,14 @@ composer: 45334
 
 ## License
 
-Copyright (c) 2014 Stefan Buck. Licensed under the MIT license.
+Copyright (c) 2015 by the GitHub-Linkter authors. Licensed under the MIT license.
 
 
 
 [npm-url]: https://npmjs.org/package/github-linker-cache
 [npm-image]: https://badge.fury.io/js/github-linker-cache.svg
-[travis-url]: https://travis-ci.org/stefanbuck/github-linker-cache
-[travis-image]: https://travis-ci.org/stefanbuck/github-linker-cache.svg?branch=master
+[travis-url]: https://travis-ci.org/github-linker/cache
+[travis-image]: https://travis-ci.org/github-linker/cache.svg?branch=master
 [count-npm-url]: https://npmjs.org/
 [count-npm-image]: http://img.shields.io/badge/npm-96619-green.svg
 [count-bower-url]: https://bower.io/
