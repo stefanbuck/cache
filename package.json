@@ -1,7 +1,7 @@
 {
   "name": "github-linker-cache",
   "description": "Module that contains the mapping between a dependency and their related GitHub repository page",
-  "version": "0.2.18",
+  "version": "0.2.19",
   "homepage": "https://github.com/github-linker/cache",
   "bugs": "https://github.com/github-linker/cache/issues",
   "license": "MIT",
@@ -40,5 +40,9 @@
     "coveralls": "gulp test && cat coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
     "build": "gulp && gulp lint",
     "test": "gulp test"
-  }
+  },
+  "files": [
+    "store",
+    "index.js"
+  ]
 }
