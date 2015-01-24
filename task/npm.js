@@ -5,6 +5,9 @@ var githubURLParser = require('github-url-from-git');
 var base = require('./base');
 
 var parseURL = function(url) {
+  if (typeof url !== 'string') {
+    return null;
+  }
 
   // Remove last trailing slash
   if (url.slice(-1) === '/') {
