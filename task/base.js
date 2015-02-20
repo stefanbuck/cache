@@ -5,15 +5,11 @@ var _ = require('lodash');
 var reqeust = require('request');
 var JSONStream = require('JSONStream');
 var es = require('event-stream');
+var stats = require('../stats.json');
 
 module.exports = function(options, done) {
-
+  var total = 0;
   var dataPath = options.filePath;
-  var oldResult = {};
-  if (fs.existsSync(dataPath)) {
-    oldResult = require(dataPath);
-  }
-
   var filter = es.mapSync(function(item) {
     if (options.filter && Array.isArray(options.filter)) {
       item = _.pick(item, options.filter);
@@ -27,21 +23,15 @@ module.exports = function(options, done) {
       return cb();
     }
     total++;
-    if (!oldResult[item.name]) {
-      update++;
-    }
     cb(null, [item.name, repoURL]);
   });
 
-  var total = 0;
-  var update = 0;
-
   var handleEnd = function() {
-    var stats = {
+    var oldTotal = stats.total[options.type];
+    done(null, {
       total: total,
-      update: update
-    };
-    done(null, stats);
+      update: total - oldTotal
+    });
   };
 
   var handleData = function(data) {

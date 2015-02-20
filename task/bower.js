@@ -6,6 +6,7 @@ var base = require('./base');
 module.exports = function(done) {
 
   var options = {
+    type: 'bower',
     uri: 'https://bower-component-list.herokuapp.com',
     jsonStreamPath: '*',
     filter: ['name', 'website'],

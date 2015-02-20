@@ -7,6 +7,7 @@ var base = require('./base');
 module.exports = function(done) {
 
   var options = {
+    type: 'composer',
     uri: 'https://packagist.org/packages/list.json?fields[]=repository',
     jsonStreamPath: 'packages.*',
     jsonStreamMap: function (item, path) {

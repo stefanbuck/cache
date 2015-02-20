@@ -76,6 +76,7 @@ var getURL = function(node) {
 module.exports = function(done) {
 
   var options = {
+    type: 'npm',
     uri: 'https://skimdb.npmjs.com/registry/_all_docs?include_docs=true',
     jsonStreamPath: 'rows.*.doc',
     filter: ['name', 'repository', 'repositories', 'homepage'],
