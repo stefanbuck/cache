@@ -2,6 +2,7 @@
 
 var fs = require('fs');
 var gulp = require('gulp');
+var rimraf = require('rimraf').sync;
 var plugins = require('gulp-load-plugins')();
 var stats = require('./stats.json');
 
@@ -11,10 +12,19 @@ var paths = {
   source: ['./index.js']
 };
 
+function rmStoreFiles() {
+  rimraf('./store/bower.js');
+  rimraf('./store/composer.js');
+  rimraf('./store/npm.js');
+}
+
+rmStoreFiles();
+
 var writeStats = function(type, result) {
   if (stats.total[type] > result.total) {
     // TODO revert store file
     console.log(type + ' update failed');
+    rmStoreFiles();
     process.exit(1);
     return;
   }
