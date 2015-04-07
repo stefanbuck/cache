@@ -28,11 +28,11 @@ console.log(cache.composer['monolog']);
 
 ## Total supported repositories
 
-npm: 109882
+npm: 116027
 
-bower: 24910
+bower: 25147
 
-composer: 51323
+composer: 54000
 
 
 ## License
@@ -46,8 +46,8 @@ Copyright (c) 2015 Stefan Buck. Licensed under the MIT license.
 [travis-url]: https://travis-ci.org/github-linker/cache
 [travis-image]: https://travis-ci.org/github-linker/cache.svg?branch=master
 [count-npm-url]: https://npmjs.org/
-[count-npm-image]: http://img.shields.io/badge/npm-109882-green.svg
+[count-npm-image]: http://img.shields.io/badge/npm-116027-green.svg
 [count-bower-url]: https://bower.io/
-[count-bower-image]: http://img.shields.io/badge/bower-24910-green.svg
+[count-bower-image]: http://img.shields.io/badge/bower-25147-green.svg
 [count-composer-url]: https://packagist.org/
-[count-composer-image]: http://img.shields.io/badge/composer-51323-green.svg
+[count-composer-image]: http://img.shields.io/badge/composer-54000-green.svg
