@@ -1,7 +1,7 @@
 {
   "name": "github-linker-cache",
   "description": "Module that contains the mapping between a dependency and their related GitHub repository page",
-  "version": "0.2.33",
+  "version": "0.2.34",
   "homepage": "https://github.com/github-linker/cache",
   "bugs": "https://github.com/github-linker/cache/issues",
   "license": "MIT",
