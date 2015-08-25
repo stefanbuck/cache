@@ -1,3 +1,7 @@
+# THIS REPO IS DEPRECATED
+This repo represents the "old way" of getting a GitHub URL for a specific package. Check out [github-linker/live-resolver](https://github.com/github-linker/live-resolver) instead.
+
+
 # cache 
 [![Build Status][travis-image]][travis-url] [![NPM version][npm-image]][npm-url] [![Supported npm package][count-npm-image]][count-npm-url] [![Supported bower package][count-bower-image]][count-bower-url] [![Supported composer package][count-composer-image]][count-composer-url]
 
