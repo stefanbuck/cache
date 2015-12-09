@@ -1,5 +1,5 @@
 # THIS REPO IS DEPRECATED
-This repo represents the "old way" of getting a GitHub URL for a specific package. Check out [github-linker/live-resolver](https://github.com/github-linker/live-resolver) instead.
+This repo represents the "old way" of getting a GitHub URL for a specific package. Check out [octo-linker/live-resolver](https://github.com/octo-linker/live-resolver) instead.
 
 
 # cache 
@@ -47,8 +47,8 @@ Copyright (c) 2015 Stefan Buck. Licensed under the MIT license.
 
 [npm-url]: https://npmjs.org/package/github-linker-cache
 [npm-image]: https://badge.fury.io/js/github-linker-cache.svg
-[travis-url]: https://travis-ci.org/github-linker/cache
-[travis-image]: https://travis-ci.org/github-linker/cache.svg?branch=master
+[travis-url]: https://travis-ci.org/octo-linker/cache
+[travis-image]: https://travis-ci.org/octo-linker/cache.svg?branch=master
 [count-npm-url]: https://npmjs.org/
 [count-npm-image]: http://img.shields.io/badge/npm-140006-green.svg
 [count-bower-url]: https://bower.io/

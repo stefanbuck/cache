@@ -2,8 +2,8 @@
   "name": "github-linker-cache",
   "description": "Module that contains the mapping between a dependency and their related GitHub repository page",
   "version": "0.2.34",
-  "homepage": "https://github.com/github-linker/cache",
-  "bugs": "https://github.com/github-linker/cache/issues",
+  "homepage": "https://github.com/octo-linker/cache",
+  "bugs": "https://github.com/octo-linker/cache/issues",
   "license": "MIT",
   "main": "index.js",
   "author": {
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/github-linker/cache"
+    "url": "https://github.com/octo-linker/cache"
   },
   "keywords": [],
   "dependencies": {},
